@@ -61,7 +61,11 @@ export default async function getNowPlayingItem(
   const isPlaying = song.is_playing;
   const songUrl = song.item.external_urls.spotify;
   const title = song.item.name;
-  const albumTitle = song.item.album.name;
+  const duration = song.item.duration_ms;
+  const progress = song.progress_ms - 1000;
+  const progressPercent = duration
+    ? Math.floor((song.progress_ms / duration) * 100)
+    : 0;
 
   return {
     albumImageUrl,
@@ -69,6 +73,8 @@ export default async function getNowPlayingItem(
     isPlaying,
     songUrl,
     title,
-    albumTitle,
+    duration,
+    progress,
+    progressPercent,
   };
 }

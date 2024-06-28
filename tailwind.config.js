@@ -16,10 +16,6 @@ export default {
         set: "linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(50, 73, 40, 1) 100%)",
       },
       colors: {
-        mint: "#dbfff8",
-        black: "#000000",
-        "gray-dark": "#242423",
-        "gray-light": "#525453",
         white: "#EFF2F4",
 
         "player-in": "#D9D9D9",
@@ -28,14 +24,10 @@ export default {
       },
       fontFamily: {
         GT_Flexa: ["GT-Flexa", "sans-serif"],
+        "Instrument-Serif": ["Instrument Serif", "serif"],
       },
       fontSize: {
-        xs: "0.5rem",
-        sm: "1rem",
         base: "16px",
-        "1xl": "1.5rem",
-        "2xl": "2rem",
-        "3xl": "5rem",
       },
     },
   },
