@@ -1,6 +1,6 @@
 function verifyTitleLenght(testString) {
   const maxLength = 8;
-  // Verifica se la lunghezza della stringa è inferiore o uguale alla lunghezza massima
+  // verify string lenght
   if (testString.length <= maxLength) {
     return [testString];
   }
@@ -14,7 +14,6 @@ function verifyTitleLenght(testString) {
 
     return `${part1 + "- " + part2}`;
   } else {
-    // La stringa contiene più di una parola, quindi non viene divisa
     return [testString];
   }
 }
