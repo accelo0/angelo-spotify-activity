@@ -1,5 +1,5 @@
 function verifyTitleLenght(testString) {
-  const maxLength = 8;
+  const maxLength = 15;
   // verify string lenght
   if (testString.length <= maxLength) {
     return [testString];
